@@ -1,0 +1,116 @@
+/* -----------------------------------basic styles------------------------------------ */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'audiowide-regular-webfont';
+    src: url('../fonts/audiowide-regular-webfont.ttf');
+}
+body{
+    font-family: 'audiowide-regular-webfont';
+}
+:root{
+    --color1:#620031;
+    --color2:#ffffff;
+    --color3:#000000;
+    --color4:#a3a3a3;
+    --color5:#ab000b;
+    --color6:#3c0f38;
+    --color7:rgba(98, 0, 49, 0.91);
+    --color8:rgba(98, 0, 49, 0.91);
+}
+
+/* -----------------------------------------header styles-------------------------------------------- */
+header{
+    background: url('../images/bg-home.jpg');
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+}
+.navBox{
+    width: 66%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 60px;
+}
+.navBox nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.navBox nav .mainMenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 65%;
+}
+.navBox nav .mainMenu li a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: normal;
+    color: var(--color2);
+    padding: 0 24px;
+}
+.navBox nav .mainMenu li a:hover{
+    background: var(--color1);
+    padding: 21px 24px 18px 24px;
+}
+.navBox nav .mainMenu li a.active{
+    background: var(--color3);
+    padding: 21px 24px 18px 24px;
+    color: var(--color4);
+}
+.projectItem{
+    position: absolute;
+    top: 60px;
+    min-height: 60px;
+    width: auto;
+    padding: 22px 0px;
+    background: var(--color1);
+    color: var(--color2);
+    list-style-type: none;
+    display: none;
+    margin-left: 15px;
+}
+.blogItem{
+    position: absolute;
+    top: 60px;
+    min-height: 60px;
+    width: auto;
+    padding: 22px 0px;
+    background: var(--color1);
+    color: var(--color2);
+    list-style-type: none;
+    display: none;
+    margin-left: -35px;
+}
+.navBox nav .mainMenu :nth-child(3):hover .projectItem{
+    display: block;
+}
+.navBox nav .mainMenu :nth-child(4):hover .blogItem{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
