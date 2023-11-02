@@ -24,22 +24,24 @@ body{
 
 /* -----------------------------------------header styles-------------------------------------------- */
 header{
-    background: url('../images/bg-home.jpg');
-    height: 100vh;
+    background: url('../images/bg-home.jpg') center;
+    height: 98vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     justify-items: center;
 }
 .navBox{
-    width: 66%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     height: 60px;
+    display: flex;
+    justify-content: center;
 }
 .navBox nav{
+    width: 66%;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
 }
 .navBox nav .mainMenu{
     display: flex;
@@ -59,11 +61,11 @@ header{
 }
 .navBox nav .mainMenu li a:hover{
     background: var(--color1);
-    padding: 21px 24px 18px 24px;
+    padding: 22px 24px 20px 24px;
 }
 .navBox nav .mainMenu li a.active{
     background: var(--color3);
-    padding: 21px 24px 18px 24px;
+    padding: 22px 24px 20px 24px;
     color: var(--color4);
 }
 .projectItem{
@@ -97,8 +99,62 @@ header{
     display: block;
 }
 
+/* ------------------------------------banner styles----------------------------------------- */
+.bannerBox{
+    width: 100%;
+    margin: -135px 0 0 0;
+    position: relative;
+}
+.contentBox{
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 
-
+}
+.nameBannerBox{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    height: auto;
+}
+.textBannerBox{
+    padding: 137px 0;
+    position: relative;
+    margin-left: -112px;
+}
+.textBannerBox h1{
+    font-size: 60px;
+    text-align: center;
+    color: var(--color2);
+    text-wrap: nowrap;
+    font-weight: normal;
+}
+.textBannerBox h2{
+    font-size: 43px;
+    text-align: center;
+    font-family: Arial;
+    color: var(--color2);
+    font-weight: normal;
+    padding-top: 17px;
+}
+.textBannerBox a{
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: var(--color3);
+    color: var(--color4);
+    text-decoration: none;
+    width: 180px;
+    height: 49px;
+    position: relative;
+    display: block;
+    text-align: center;
+    line-height: 49px;
+    font-family: Arial;
+    margin: auto;
+    margin-top: 32px;
+}
+.projectPhotosBox{}
 
 
 
