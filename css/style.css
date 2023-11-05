@@ -58,6 +58,7 @@ header{
     font-weight: normal;
     color: var(--color2);
     padding: 0 24px;
+    transition: all .1ms ease;
 }
 .navBox nav .mainMenu li a:hover{
     background: var(--color1);
@@ -102,7 +103,7 @@ header{
 /* ------------------------------------banner styles----------------------------------------- */
 .bannerBox{
     width: 100%;
-    margin: -135px 0 0 0;
+    margin: 40px 0 0 0;
     position: relative;
 }
 .contentBox{
@@ -110,7 +111,9 @@ header{
     display: flex;
     flex-direction: column;
     margin: auto;
-
+}
+.bannerImgBox{
+    z-index: 10;
 }
 .nameBannerBox{
     display: grid;
@@ -153,8 +156,33 @@ header{
     font-family: Arial;
     margin: auto;
     margin-top: 32px;
+    transition: all .1ms ease;
 }
-.projectPhotosBox{}
+.textBannerBox a:hover{
+    background-color: var(--color5);
+    color: var(--color2);
+}
+.projectPhotosBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: -40px 0 0 0;
+}
+.projectPhotosBox h3{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 23px;
+    color: var(--color4);
+    font-weight: normal;
+    line-height: 55px;
+}
+.projectPhotosBox ul{
+    list-style-type: none;
+    display: flex;
+}
+.projectPhotosBox ul li a img:hover{
+    opacity: .7;
+}
 
 
 
