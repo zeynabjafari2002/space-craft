@@ -166,7 +166,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: -40px 0 0 0;
+    margin: -42px 0 0 0;
 }
 .projectPhotosBox h3{
     text-align: center;
@@ -184,13 +184,144 @@ header{
     opacity: .7;
 }
 
+/* -------------------------------------mission-------------------------------------- */
+.missonSection{
+    width: 100%;
+    background-color: var(--color1);
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.missionContent{
+    width: 54%;
+}
+.missonSection .missionContent h3{
+    font-size: 32px;
+    text-align: center;
+    color: var(--color2);
+    font-family:  audiowide-regular-webfont;
+    font-weight: normal;
+    padding: 25px 0 20px 0;
+}
+.missonSection .missionContent p{
+    color: var(--color2);
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial;
+    padding: 0 0 30px 0;
+}
 
-
-
-
-
-
-
+/* ------------------------------detail of the website------------------------------ */
+.detailSection{
+    width: 100%;
+    height: auto;
+    background-color: var(--color3);
+}
+.detailContent{
+    width: 66%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+.videoBox{
+    position: relative;
+    height: 428px;
+}
+.videoBox h3{
+    color: var(--color2);
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: normal;
+    padding: 25px 0 35px 0;
+}
+.videoBox a{
+    display: block;
+    height: 258px;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    width: 460px;
+}
+.videoBox a img{
+    transition: all 2ms ease;
+    position: relative;
+}
+.videoBox a:hover img{
+    filter: opacity(0.7);
+    -webkit-filter: opacity(0.7);
+}
+.videoBox a:hover span{
+    background: url('../images/icons.png') no-repeat 0 -226px;
+}
+.videoBox a  span{
+    background: url('../images/icons.png') no-repeat 0 -152px;
+    display: block;
+    position: relative;
+    top:-170px ;
+    left: 200px;
+    height: 72px;
+    width: 62px;
+    z-index: 1;
+    opacity: 1;
+}
+.blogBox h3{
+    font-size: 32px;
+    font-weight: normal;
+    color: var(--color2);
+    padding: 25px 0 35px 0;
+    text-transform: uppercase;
+}
+.blogBox ul{
+    height: 258px;
+    display: grid;
+    grid-template-rows: repeat(3,90px 1px 90px);
+    gap: 37px;
+    list-style-type: none;
+}
+.blogBox ul li h4{
+    color: var(--color4);
+    font-size: 23px;
+    font-weight: normal;
+    padding: 2px 17px;
+    float: right;
+}
+.blogBox ul li:last-child h4{
+    padding: 2px 36px 0 0;
+}
+.blogBox ul li a:hover img{
+    filter: opacity(0.6);
+    -webkit-filter: opacity(0.6);
+}
+.blogBox ul li span{
+    color: var(--color2);
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: normal;
+    float: right;
+    margin-top: -57px;
+    margin-right: 193px;
+}
+.blogBox ul hr{
+    width: 100%;
+    border-top: var(--color4) 1px solid;
+}
+.blogBox ul li #blogBtn{
+    text-decoration: none;
+    color: var(--color2);
+    font-family: Arial;
+    text-transform: uppercase;
+    float: right;
+    background-color: var(--color6);
+    padding: 7px 17px;
+    font-weight: normal;
+    font-size: 14px;
+    margin: -35px 0;
+    transition: all 2ms ease;
+}
+.blogBox ul li #blogBtn:hover{
+    background-color: var(--color1);
+}
 
 
 
