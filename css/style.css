@@ -30,6 +30,7 @@ header{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     justify-items: center;
+    position: relative;
 }
 .navBox{
     width: 100%;
@@ -183,44 +184,6 @@ header{
 .projectPhotosBox ul li a img:hover{
     opacity: .7;
 }
-
-/* ------------------------------------main banner styles----------------------------------------- */
-.aboutContainer{
-    width: 100%;
-    background:url('../images/bg-about.jpg')no-repeat center top #000000;
-    padding: 0;
-    min-height: 455px;
-    margin: -357px 0;
-}
-.aboutContainer .aboutContent{
-    width: 820px;
-    margin: auto;
-    padding: 60px 0 0 0;
-}
-.aboutContainer .aboutContent h1{
-    color: var(--color2);
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 36px;
-    font-weight: normal;
-}
-.aboutContainer .aboutContent h2{
-    font-size: 32px;
-    color: var(--color2);
-    text-align: center;
-    font-weight: normal;
-    padding: 75px 0 0 0;
-}
-.aboutContainer .aboutContent p{
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--color2);
-    text-align: center;
-    font-family: Arial;
-    display: block;
-    padding: 20px 0;
-}
-
 
 /* -------------------------------------mission-------------------------------------- */
 .missonSection{
@@ -421,4 +384,134 @@ footer .footNote p{
     font-size: 12px;
     font-family: Arial;
     color: var(--color3);
+}
+
+
+/* ---------About------------------------------------------------------------------------------------------------------ */
+/*-------------------- banner about --------------------*/
+.aboutContainer{
+    width: 100%;
+    background:url('../images/bg-about.jpg')no-repeat center top #000000;
+    padding: 0;
+    min-height: 455px;
+    position: relative;
+}
+.aboutContainer .aboutContent{
+    width: 820px;
+    margin: auto;
+    padding: 60px 0 0 0;
+}
+.aboutContainer .aboutContent h1{
+    color: var(--color2);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    font-weight: normal;
+}
+.aboutContainer .aboutContent h2{
+    font-size: 32px;
+    color: var(--color2);
+    text-align: center;
+    font-weight: normal;
+    padding: 75px 0 0 0;
+}
+.aboutContainer .aboutContent p{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--color2);
+    text-align: center;
+    font-family: Arial;
+    display: block;
+    padding: 20px 0;
+}
+.aboutContainer .aboutContent p a{
+    color: var(--color2);
+}
+.aboutContainer .aboutContent p a:hover{
+    color: var(--color4);
+}
+
+/* --------------------more section-------------------- */
+.moreSection{
+    width: 100%;
+    height: 253px;
+    background:var(--color1);
+    z-index: 1;
+    position: relative;
+}
+.moreSection .moreContent{
+    width: 66%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+.moreSection .moreContent .moreTextContent{
+    width: 624px;
+}
+.moreSection .moreContent .moreImgContent{
+    width: 282px;
+}
+.moreSection .moreContent .moreTextContent h3{
+    font-size: 23px;
+    color: var(--color4);
+    font-weight: normal;
+    padding: 15px 0 0 0;
+}
+.moreSection .moreContent .moreTextContent p{
+    font-size: 14px;
+    color: var(--color2);
+    font-family: Arial;
+    line-height: 25px;
+    padding: 20px 0;
+}
+.moreSection .moreContent .moreTextContent p a{
+    color: var(--color2);
+}
+.moreSection .moreContent .moreTextContent p a:hover{
+    color: var(--color4);
+}
+.moreImgContent img{
+    width: 100%;
+}
+
+/* -------------------- community section--------------------  */
+.communitySection{
+    width: 100%;
+    height: 360px;
+    background-color: var(--color3);
+}
+.communitySection .communityContent{
+    width: 66%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 80px 0 0 0;
+}
+.communitySection .communityContent .communityImgContent{
+    width: 372px;
+}
+.communitySection .communityContent .communityTextContent{
+    width: 588px;
+}
+.communitySection .communityContent .communityTextContent h3{
+    color: var(--color4);
+    font-size: 23px;
+    font-weight: normal;
+    padding: 30px 0 0 15px;
+}
+.communitySection .communityContent .communityTextContent p{
+    color: var(--color2);
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: normal;
+    padding: 20px 0 0 15px;
+    line-height: 25px;
+}
+.communitySection .communityContent .communityTextContent p a{
+    color: var(--color2);
+}
+.communitySection .communityContent .communityTextContent p a:hover{
+    color: var(--color4);
 }
