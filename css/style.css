@@ -668,7 +668,56 @@ footer .footNote p{
 }
 
 
-
+/* -----project1 styles--------------------------------------------- */
+.projectItem{
+    display: block;
+    background-color: var(--color3);
+}
+.bannerProj1Section{
+    width: 100%;
+    background-color: var(--color3);
+    height: 910px;
+}
+.contentBannerProj1{
+    width: 66%;
+    margin: auto;
+}
+.contentBannerProj1 .proj1Title{
+    width: 100%;
+}
+.contentBannerProj1 .proj1Title h1{
+    color: var(--color2);
+    font-size: 36px;
+    text-align: center;
+    font-weight: normal;
+    padding: 60px 0 85px 0;
+    text-transform: uppercase;
+}
+.contentBannerProj1 .imgProj1{
+    width: 100%;
+}
+.contentBannerProj1 .textProj1{
+    width: 84%;
+    margin: auto;
+}
+.contentBannerProj1 .textProj1 h2{
+    font-size: 23px;
+    font-weight: normal;
+    color: var(--color4);
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+.contentBannerProj1 .textProj1 p{
+    color: var(--color2);
+    font-size: 14px;
+    font-family: Arial;
+    text-align: center;
+    line-height: 24px;
+    padding: 30px 0 0 0;
+}
+.contentBannerProj1 .textProj1 p:last-child{
+    padding: 50px 0 0 0;
+}
 
 
 
